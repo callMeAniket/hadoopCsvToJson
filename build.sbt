@@ -16,7 +16,11 @@ val sparkVersion = "3.5.1"
 libraryDependencies ++= Seq(
   "org.apache.spark" %% "spark-core" % sparkVersion,
   "org.apache.spark" %% "spark-sql" % sparkVersion,
-  "mysql" % "mysql-connector-java" % "8.0.33"
+  "mysql" % "mysql-connector-java" % "8.0.33",
+  "org.apache.hadoop" % "hadoop-common" % "3.3.4",
+  "org.apache.hadoop" % "hadoop-aws" % "3.3.4",
+  "com.amazonaws" % "aws-java-sdk-bundle" % "1.12.520",
+  "com.typesafe" % "config" % "1.4.2"
 )
 
 assemblyMergeStrategy in assembly := {

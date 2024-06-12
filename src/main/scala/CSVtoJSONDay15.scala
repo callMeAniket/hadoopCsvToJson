@@ -1,7 +1,7 @@
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.functions.col
 
-object CSVtoJSON {
+object CSVtoJSONDay15 {
   def main(args: Array[String]): Unit = {
     val spark = SparkSession.builder()
       .appName("CSV to JSON Converter")
