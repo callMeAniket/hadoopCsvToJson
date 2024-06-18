@@ -19,8 +19,12 @@ libraryDependencies ++= Seq(
   "mysql" % "mysql-connector-java" % "8.0.33",
   "org.apache.hadoop" % "hadoop-common" % "3.3.4",
   "org.apache.hadoop" % "hadoop-aws" % "3.3.4",
+  "com.datastax.spark" %% "spark-cassandra-connector" % "3.0.1",
   "com.amazonaws" % "aws-java-sdk-bundle" % "1.12.520",
-  "com.typesafe" % "config" % "1.4.2"
+  "com.typesafe" % "config" % "1.4.2",
+  "com.github.jnr" % "jnr-posix" % "3.1.19",
+  "joda-time" % "joda-time" % "2.12.7",
+  "org.scalatest" %% "scalatest" % "3.2.18" % "test",
 )
 
 assemblyMergeStrategy in assembly := {
